@@ -1,0 +1,17 @@
+name: AWS ECR proxy Action
+description: This action pulls the 3rd party docker images and push it to AWS ECR
+inputs:
+  title:
+    required: true
+    description: Title of the issue
+  token:
+    required: true
+    description: Token of the user that creates the issue
+
+runs:
+  using: docker
+  image: 'Dockerfile'
+
+branding:
+  icon: arrow-up
+  color: green
